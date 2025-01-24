@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="search-bar">
+        <form id="search-engine">
+          <!-- search engine bit starts here 
+           reference for how it's done is in js-forms.js & js-forms-challenge.js-->
+          <input
+            class="search-input"
+            type="search"
+            name=""
+            id="search"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="searched-city">Boracity</h1>
+            <p class="current-details">
+              <!--updated by JS, reference from js-functions.js -->
+              <span id="date-time"></span>, moderate rain <br />
+
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌤</span
+            ><span class="current-temperature-value" id="update-temp">14</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+
+      <div class="forecast-weekly">
+        <ul>
+          <li>
+            Sun
+            <span class="weather-icons">🌤</span>
+            <br />
+            <strong>14°C</strong> 18°C
+          </li>
+          <li>
+            Mon
+            <span class="weather-icons">🌤</span>
+            <br />
+            <strong>14°C</strong> 18°C
+          </li>
+          <li>
+            Tue
+            <span class="weather-icons">🌤</span>
+            <br />
+            <strong>14°C</strong> 18°C
+          </li>
+          <li>
+            Wed
+            <span class="weather-icons">🌤</span>
+            <br />
+            <strong>14°C</strong> 18°C
+          </li>
+          <li>
+            Thu
+            <span class="weather-icons">🌤</span>
+            <br />
+            <strong>14°C</strong> 18°C
+          </li>
+        </ul>
+      </div>
+
+      <footer class="footer">
+        This project was coded by <a href="#" target="_blank">Lotta</a> and is
+        <a href="#" target="_blank"> on Github</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </footer>
+
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
